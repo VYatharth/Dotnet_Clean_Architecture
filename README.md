@@ -1,3 +1,5 @@
+#This app is created using Python3 and FastAPI
+----------------------------------------------------------------
 # For running from the shared image
 - Run **docker run -d -p 8080:8080 vyathartha/user-app** to create and run container
 - open **http://localhost:8080/docs** in browser
