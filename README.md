@@ -1,4 +1,8 @@
-# This app is created using Python3, FastAPI and SQLite
+# This app is created using Python3, FastAPI, SQLAlchemy(ORM) and SQLite. This is the app structure
+- The app starts from **app/main.py**
+- **routers** contains the APIs and their routes
+- **models** contains the DB models against whict tables are created by SQLAlchemy
+- **repositories** contains the repositories to access DB
 
 
 # For running from the shared image
