@@ -3,6 +3,7 @@ from typing import List
 from fastapi import Depends, HTTPException, status
 from app.models.UserModel import User
 from app.repositories.UserRepository import UserRepository
+from app.schemas.LoginSchema import LoginRequestSchema
 from app.schemas.UserSchema import UserRequestSchema
 
 
@@ -40,4 +41,13 @@ class UserService:
         return self.userRepository.update(
             user_id, User(username=user_body.username,email=user_body.email,password=user_body.password )
         )
+    
+    def login(self, login_body: LoginRequestSchema) -> bool:
+        user = self.userRepository.getByEmail(
+            User(email=login_body.email)
+        )
+        if user and user.password == login_body.password:
+            return True
+        
+        return False
 

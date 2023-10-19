@@ -23,6 +23,9 @@ class UserRepository:
             User,
             user.id,
         )
+    
+    def getByEmail(self, user: User) -> User:
+        return self.db.query(User).filter(User.email == user.email).first()
 
     def create(self, user: User) -> User:
         self.db.add(user)
