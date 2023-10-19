@@ -1,3 +1,7 @@
+# For running from the shared image
+- Run **docker run -d -p 8080:8080 vyathartha/user-app** to create and run container
+- open **http://localhost:8080/docs** in browser
+
 # For building your code on local
 - Install Python3
 - Create python environment **python -m venv user-app-env**

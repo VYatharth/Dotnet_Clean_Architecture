@@ -9,22 +9,9 @@ class UserRequestSchema(BaseModel):
   password: str
 
 class UserResponseSchema(BaseModel):
-  username: str
-  email: str
-  class Config():
-    from_attributes = True
-
-
-
-
-# For PostDisplay
-class User(BaseModel):
-  username: str
-  class Config():
-    from_attributes = True
-
-
-class UserAuth(BaseModel):
   id: int
   username: str
   email: str
+  class Config():
+    from_attributes = True
+
