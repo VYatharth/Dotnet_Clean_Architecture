@@ -1,4 +1,4 @@
-# This app is created using Python3, FastAPI ans SQLite
+# This app is created using Python3, FastAPI and SQLite
 
 
 # For running from the shared image
