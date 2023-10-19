@@ -1,9 +1,9 @@
 
 from typing import List
 from fastapi import Depends, HTTPException, status
-from models.UserModel import User
-from repositories.UserRepository import UserRepository
-from schemas.UserSchema import UserRequestSchema
+from app.models.UserModel import User
+from app.repositories.UserRepository import UserRepository
+from app.schemas.UserSchema import UserRequestSchema
 
 
 class UserService:

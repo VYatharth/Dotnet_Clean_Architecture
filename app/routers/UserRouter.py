@@ -1,7 +1,7 @@
 from typing import List
 from fastapi import APIRouter, Depends, status
-from schemas.UserSchema import UserRequestSchema, UserResponseSchema
-from services.UserService import UserService
+from app.schemas.UserSchema import UserRequestSchema, UserResponseSchema
+from app.services.UserService import UserService
 
 UserRouter = APIRouter(
   prefix='/users',
